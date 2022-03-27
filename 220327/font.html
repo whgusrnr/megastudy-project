@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #m { font-family: "맑은 고딕"; }
+    #d { font-family: "돋움"; }
+    #g { font-family; "굴림"; }
+    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+    h2 { font-family: "Black Han Sans";}
+    .phrase { border: 1px solid black;
+    margin: 5px;
+    padding: 10px; }
+  </style>
+</head>
+<body>
+<div id="container">
+  <h1>글꼴 알아보기</h1>
+  <ul>
+    <li id="m">맑은고딕</li>
+    <li id="d">돋움</li>
+    <li id="g">굴림</li>
+  </ul>
+  <h1>글씨 크기 바꾸기</h1>
+  <ul>
+    <li style="font-size: 30px;">절대 크기</li>
+    <li style="font-size: 2em;">상대 크기</li>
+    <li>크기</li>
+    <li style="font-size: 150%">백분율</li>
+  </ul>
+  <h2>이텔릭체/굵기주기</h2>
+  <ul>
+    <li style="font-style: italic;">italic</li>
+    <li style="font-weight: bold;">bold</li>
+    <li style="font-weight: lighter;">light</li>
+  </ul>
+  <h2>색깔 연습하기</h2>
+  <ul>
+    <li style="color: blue;">색깔 이름 사용</li>
+    <li style="color: rgb(231, 11, 23)">RGB 색깔 코드 사용: 0~255 사이 숫자 3개</li>
+    <li style="color: rgba(231, 11, 23, 0.1)">RGB 색깔 코드 사용: 0~255 사이 숫자 3개 +0~1사이 소수</li>
+  </ul>
+  <input type="color">
+  <h2>글씨 정렬</h2>
+  <div class="phrase" style="text-align: left;">원숭이도 나무에서 떨어진다</div>
+  <div class="phrase" style="text-align: center;">원숭이도 나무에서 떨어진다</div>
+  <div class="phrase" style="text-align: right;">원숭이도 나무에서 떨어진다</div>
+  <div class="phrase" style="text-align: justify;">원숭이도 나무에서 떨어진다</div>
+  <h2>줄 사이의 간격</h2>
+  <div class="phrase"
+       style="font-size: 12px; line-height: 2.0;">
+    동해 물과 백두산이
+    마르고 닳도록
+    하는님이 보우하사
+    우리나라 만세</div>
+  <h2>text-decoration</h2>
+  <p style="text-decoration: none;">none</p>
+  <p style="text-decoration: underline;">underline</p>
+  <p style="text-decoration: overline;">overline</p>
+  <p style="text-decoration: line-through;">line-through</p>
+  <h2>그림자</h2>
+  <p style="font-size: 24px; color: red; text-shadow: 3px 3px black;">html</p>
+  <p style="font-size: 24px; color: black; text-shadow: 5px 5px 5px orange;">HTML</p>
+  <H2>글자 사이 간격 조절</H2>
+  <p style="font-size: 30px;">CSS: 0em</p>
+  <p style="font-size: 30px; letter-spacing: 0.5em">CSS: 0.5em</p>
+  <p style="font-size: 30px; letter-spacing: 2em">CSS: 2em</p>
+</div>
+</body>
+</html>
