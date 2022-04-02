@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1, div, p, span{
+            border: 1px solid black;
+        }
+        #box1 {
+            width: 400px;
+            height: 100px;
+            }
+            #box2 {
+                width: 50%;
+                height: 100px;
+                background-color: red;
+            }
+            #box3 {
+                width: 50%;
+                height: 30px;
+                background-color: blue;
+            }
+            #box4, #box5, #box6, #box7, #box8, #box9, #box10, #box11, #box12, #box13 {
+                width: 30%;
+                height: 100px;
+                margin: 50px;
+            }
+            #box4 { box-shadow: 2px -2px 5px 0px red; }
+            #box5 { box-shadow: 5px 5px 15px 5px blue; }
+            #box6 { border: 5px solid black; }
+            #box7 { border: 5px dotted blue; }
+            #box8 { border: 5px dashed red; }
+            #box9 { border: 5px double green; }
+            #box10 { border: 20px groove cyan;}
+            #box11 { border: 20px inset cyan; }
+            #box12 { border: 20px outset cyan; }
+            #box13 { border: 20px ridge cyan; }
+    </style>
+</head>
+<body>
+<h1>블록 레벨 요소</h1>
+<div>블룍 레벨 요소에는 <p> p, div, h1</p>이 있습니다.</div>
+<p>블록의 너비는 100%입니다.</p>
+
+<h1>인라인 레벨 요소</h1>
+<div>인라인 레벨 요소에는 <span>span이나 img등의 일반 태그</span> 가 있습니다.</div>
+
+<div id="box1">1</div>
+<div id="box2">
+<div id="box3">3</div>
+</div>
+
+<div id="box4">4</div>
+<div id="box5">5</div>
+
+<div id="box6">6</div>
+<div id="box7">7</div>
+<div id="box8">8</div>
+<div id="box9">9</div>
+<div id="box10">10</div>
+<div id="box11">11</div>
+<div id="box12">12</div>
+<div id="box13">13</div>
+</body>
+</html>
