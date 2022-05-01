@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경 꾸미기</title>
+    <style>
+        .desc {
+            border: 5px dotted black;
+            padding: 20px;
+            background-color: cyan;
+        }
+        #clip-border { background-clip: birder-box; }
+        #clip-padding { background-clip: padding-box; }
+        #clip-content { background-clip: content-box; }
+        body {
+            background-image: url('dog.jpg');
+        }
+        ul {
+            list-style: none;
+            margin-left: -30px;
+        }
+        li {
+            background-image: url('orange.jpg');
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 30px;
+            color: white;
+        }
+        .orig {
+            width: 200px;
+            height: 90px;
+            background-image: url('lemon.jpg');
+            background-size: 300px 100px;
+            margin: 10px;
+            padding: 20px;
+            border: 20px solid rgba(100, 100, 100, 0.5);
+            background-position: right top;
+            }
+            #bg1 { background-origin: padding-box;}
+            #bg2 { background-origin: border-box; }
+            #bg3 { background-origin: content-box; }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="desc" id="clip-border">
+        clip-border
+    </div>
+    <div class="desc" id="clip-padding">
+        clip-padding
+    </div>
+    <div class="desc" id="clip-content">
+        clip-content
+    </div>
+
+
+    <ul>
+        <li>매뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+
+    </ul>
+
+    <div class="orig" id="bgl">
+        padding-box
+    </div>
+    <div class="orig" id="bg2">
+        border-box
+    </div>
+    <div class="orig" id="bg3">
+        content-box
+    </div>
+</div>
+</body>
+</html>
